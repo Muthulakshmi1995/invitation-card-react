@@ -1,0 +1,18 @@
+.search-page { background:#e7e5fa; min-height:100vh; padding:55px 22px 80px; color:#111; }
+.search-hero { text-align:center; max-width:1100px; margin:0 auto; }
+.search-hero h1 { margin:0 0 8px; font-size:27px; }
+.search-hero p { margin:0 0 38px; font-size:18px; }
+.search-main-box { height:48px; border:1.5px solid #222; border-radius:7px; display:flex; align-items:center; overflow:hidden; }
+.search-main-box button { height:100%; width:95px; border:0; background:#f7bd4b; font-weight:700; font-size:17px; }
+.search-main-box span { flex:1; font-weight:700; color:#777; }
+.search-tags { display:flex; flex-wrap:wrap; gap:30px; margin:28px 0 40px; justify-content:flex-start; }
+.search-tags span { background:#fff; border-radius:7px; padding:7px 10px; box-shadow:0 2px 4px #9997; font-weight:700; }
+.search-tags b { margin-left:12px; font-weight:400; }
+.search-results { max-width:1100px; margin:0 auto; text-align:left; }
+.search-results h2 { font-size:19px; margin:28px 0 18px; }
+.search-idea-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.search-idea-card { min-height:110px; border-radius:12px; background:#d9b8f0; display:flex; align-items:center; overflow:hidden; }
+.search-idea-card img { width:58%; height:120px; object-fit:contain; background:#fff; }
+.search-idea-card h3 { padding:12px; font-size:16px; }
+@media(max-width:800px){.search-idea-grid{grid-template-columns:1fr 1fr}.search-tags{gap:10px}}
+@media(max-width:550px){.search-idea-grid{grid-template-columns:1fr}}

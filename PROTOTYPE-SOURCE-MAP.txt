@@ -1,0 +1,49 @@
+Prototype source-of-truth audit
+===============================
+
+The screen recording was reviewed across the full 140.7-second recording, with key frames checked through the Home page, Wedding Cards page, navbar dropdowns, Search, Login, and Wishlist screens.
+
+Observed navbar order:
+Home | Wedding Invitation | Special occasions | Theme Cards | Scroll Invitation | Digital Invitation
+
+Observed dropdowns in the recording:
+Special occasions:
+- Birthday Invitations
+- Property Cards
+- Luxury Invitations
+- Ear Boring Cards
+- Engagement Cards
+- House Warming
+- Anniversary Cards
+
+Theme Cards:
+- Beach Theme Cards
+- Bride Theme Cards
+- Box Cards
+- Single Sheet Cards
+
+Scroll Invitation:
+- Small Size Scroll
+- Box Scroll
+- Only Scroll
+- High End Scroll
+
+Digital Invitation:
+- Whatsapp Cards
+- Save the Date Cards
+
+Important prototype behavior from the user's latest instruction:
+- Wedding Invitation has NO dropdown. It goes directly to /wedding-cards.
+- Navbar and Footer are shared and remain visible when the route/content changes.
+- Home and Wedding Cards are separate content pages under the same shared Navbar/Footer.
+
+Observed pages/screens:
+- Home: hero, laser-cut section, unique/exclusive cards, theme-based invitation, offers, simple/affordable wedding cards, summer offer, invitation collections, happy customers, how it works, footer.
+- Wedding Cards: WEDDING CARDS heading and 12 category cards in a 4-column desktop grid.
+- Search: Everything You Need, to Plan your Dream Wedding; search/filter UI and recommendation cards.
+- Login: Login / Sign Up tabs, email/password fields, Login & Continue, Forgot Password.
+- Wishlist: Wishlist heading and The blue Wedding Cards, Rs. 72.25.
+- Cart: Product / Qty / Unit Price / Tax / Price, SKU KSN0054, totals, minimum 100 items warning, Continue Shopping, Checkout.
+
+Source limitation:
+The recording shows the dropdown labels and hover states, but it does not show the destination content screens after clicking each individual Special occasions / Theme / Scroll / Digital dropdown option. Those destination screens are therefore not claimed as exact prototype-derived screens here.

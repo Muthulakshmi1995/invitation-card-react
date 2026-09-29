@@ -1,0 +1,912 @@
+* {
+  box-sizing: border-box;
+}
+
+.home-page {
+  background: #e6e6fa;
+  color: #333;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+  min-height: 570px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 70px 30px;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(230, 230, 250, 0.18);
+}
+
+.hero-card {
+  position: relative;
+  z-index: 2;
+
+  width: min(820px, 90%);
+  min-height: 410px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 45px 70px;
+
+  box-shadow: 0 15px 45px rgba(50, 40, 50, 0.12);
+}
+
+.hero-small {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #7d766d;
+}
+
+.hero-ornament {
+  color: #78916f;
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.hero-card h1 {
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.05;
+
+  font-weight: 500;
+
+  color: #34483a;
+
+  margin: 5px 0 18px;
+}
+
+.hero-card p {
+  max-width: 650px;
+
+  color: #777;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+
+  margin: 0 0 25px;
+}
+
+.primary-button {
+  background: #d5a844;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 30px;
+
+  padding: 13px 32px;
+
+  font-family: inherit;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.primary-button:hover {
+  background: #bd9133;
+}
+
+.hero-bottom {
+  color: #78916f;
+
+  margin-top: 25px;
+}
+
+
+/* =========================
+   LASER CUT INVITATIONS
+========================= */
+
+.laser-section {
+  padding: 30px 5%;
+}
+
+.laser-banner {
+  background: #f8f1e7;
+
+  min-height: 220px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.5fr auto;
+
+  align-items: center;
+
+  padding: 25px 45px;
+
+  overflow: hidden;
+}
+
+.laser-image {
+  height: 170px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.laser-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.laser-content {
+  padding: 10px 40px;
+}
+
+.laser-content > span {
+  color: #9c8050;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+.laser-content h2 {
+  color: #4c4b42;
+
+  font-size: 30px;
+
+  margin: 8px 0;
+}
+
+.laser-content p {
+  color: #777;
+
+  margin: 0 0 15px;
+}
+
+.laser-content button {
+  border: none;
+
+  background: #506b4e;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.laser-decoration {
+  color: #9d8050;
+
+  font-size: 40px;
+}
+
+
+/* =========================
+   COMMON SECTIONS
+========================= */
+
+.content-section {
+  padding: 65px 6%;
+}
+
+.section-heading {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.heading-symbol {
+  color: #9c8050;
+
+  font-size: 20px;
+}
+
+.section-heading h2 {
+  color: #45443d;
+
+  font-size: 32px;
+
+  font-weight: 500;
+
+  margin: 5px 0 8px;
+}
+
+.section-heading p {
+  color: #777;
+
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.heading-line {
+  margin-top: 12px;
+
+  color: #819675;
+
+  font-size: 22px;
+}
+
+
+/* =========================
+   CATEGORY / THEME
+========================= */
+
+.three-card-grid {
+  max-width: 1000px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+}
+
+.category-card {
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.category-image {
+  height: 240px;
+
+  background: #fff;
+
+  position: relative;
+
+  padding: 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.category-card:hover .category-image {
+  transform: translateY(-6px);
+}
+
+.heart {
+  position: absolute;
+
+  top: 10px;
+  right: 12px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #777;
+}
+
+.category-card h3 {
+  color: #4d4a43;
+
+  font-size: 17px;
+
+  margin: 17px 0 8px;
+}
+
+.category-card button {
+  border: none;
+
+  background: transparent;
+
+  color: #8d7545;
+
+  cursor: pointer;
+
+  font-family: inherit;
+}
+
+
+/* =========================
+   OFFERS
+========================= */
+
+.offers-section {
+  padding: 20px 6% 60px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+}
+
+.offer-card {
+  min-height: 210px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 35px;
+
+  gap: 25px;
+}
+
+.offer-first {
+  background: #f2dfcf;
+}
+
+.offer-second {
+  background: #e0eadc;
+}
+
+.offer-text > span {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #85735c;
+}
+
+.offer-text p {
+  margin: 12px 0 5px;
+
+  color: #666;
+}
+
+.offer-text h3 {
+  color: #4d493f;
+
+  font-size: 20px;
+
+  margin: 0 0 8px;
+
+  font-weight: 500;
+}
+
+.offer-text small {
+  color: #777;
+}
+
+.offer-badge {
+  width: 105px;
+  height: 105px;
+
+  min-width: 105px;
+
+  border-radius: 50%;
+
+  background: #d5a844;
+
+  color: white;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.offer-badge strong {
+  font-size: 27px;
+}
+
+.offer-badge span {
+  font-size: 11px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-section {
+  padding-top: 35px;
+}
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+
+  max-width: 1100px;
+
+  margin: auto;
+}
+
+.product-card {
+  background: white;
+
+  padding: 14px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.product-image {
+  height: 240px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #fafafa;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.product-heart {
+  position: absolute;
+
+  right: 10px;
+  top: 10px;
+
+  z-index: 2;
+
+  background: white;
+
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+}
+
+.product-card h3 {
+  color: #555;
+
+  font-size: 14px;
+
+  line-height: 1.45;
+
+  min-height: 42px;
+
+  margin: 13px 3px 10px;
+
+  font-weight: 500;
+}
+
+.product-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.product-bottom strong {
+  color: #5d7657;
+}
+
+.product-bottom button {
+  border: none;
+
+  background: #506b4e;
+
+  color: white;
+
+  border-radius: 18px;
+
+  padding: 8px 14px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   SUMMER OFFER
+========================= */
+
+.summer-section {
+  margin: 25px 6%;
+
+  min-height: 330px;
+
+  background:
+    linear-gradient(
+      rgba(70, 70, 70, 0.35),
+      rgba(70, 70, 70, 0.35)
+    ),
+    url("../assets/Beach_Wedding_Invitation_Set__Wedding_Invitation_Template_2_Set__Editable_Wedding_Invitation__Editable_on_Canva___Digital_Download__Seashell-removebg-preview.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.summer-overlay {
+  color: white;
+}
+
+.summer-overlay > span {
+  font-size: 12px;
+
+  letter-spacing: 3px;
+}
+
+.summer-overlay h2 {
+  font-size: 35px;
+
+  font-weight: 500;
+
+  margin: 10px 0 25px;
+}
+
+.summer-offers {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 35px;
+
+  flex-wrap: wrap;
+}
+
+.summer-offers div {
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 100px;
+}
+
+.summer-offers strong {
+  font-size: 17px;
+}
+
+.summer-offers span {
+  font-size: 14px;
+}
+
+.summer-overlay button {
+  margin-top: 25px;
+
+  padding: 11px 25px;
+
+  border: none;
+
+  border-radius: 22px;
+
+  background: #d5a844;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   COLLECTIONS
+========================= */
+
+.collections-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.collection-card {
+  background: white;
+
+  padding: 10px;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+}
+
+.collection-card img {
+  width: 100%;
+
+  height: 190px;
+
+  object-fit: contain;
+}
+
+.collection-title {
+  text-align: center;
+
+  padding: 12px 5px;
+
+  color: #555;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   HAPPY CUSTOMERS
+========================= */
+
+.reviews-section {
+  padding: 65px 6%;
+}
+
+.reviews-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.review-card {
+  background: white;
+
+  text-align: center;
+
+  padding: 28px 22px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.review-photo {
+  width: 72px;
+  height: 72px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 8px;
+}
+
+.review-card h3 {
+  margin: 3px 0 8px;
+
+  color: #555;
+}
+
+.review-card h4 {
+  margin: 0 0 10px;
+
+  color: #665b49;
+
+  font-size: 15px;
+}
+
+.review-card p {
+  color: #777;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+.stars {
+  color: #e09b2d;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-section {
+  padding-bottom: 75px;
+}
+
+.steps-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 20px;
+}
+
+.step-card {
+  text-align: center;
+
+  position: relative;
+}
+
+.step-card img {
+  width: 85px;
+  height: 85px;
+
+  object-fit: contain;
+
+  margin: 10px auto;
+}
+
+.step-number {
+  width: 27px;
+  height: 27px;
+
+  border-radius: 50%;
+
+  background: #829a76;
+
+  color: white;
+
+  display: grid;
+
+  place-items: center;
+
+  margin: auto;
+
+  font-size: 12px;
+}
+
+.step-card h3 {
+  color: #555;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .three-card-grid {
+    gap: 20px;
+  }
+
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .hero-card {
+    padding: 35px 25px;
+  }
+
+  .laser-banner {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .laser-content {
+    padding: 20px;
+  }
+
+  .three-card-grid,
+  .products-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-section {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .hero-section {
+    min-height: 520px;
+
+    padding: 30px 15px;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .hero-card h1 {
+    font-size: 38px;
+  }
+
+  .content-section,
+  .reviews-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

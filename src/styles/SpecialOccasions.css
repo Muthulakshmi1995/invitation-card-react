@@ -1,0 +1,342 @@
+/* =========================
+   SPECIAL OCCASIONS PAGE
+========================= */
+
+.special-occasions-page {
+  min-height: 100vh;
+  background: #f7f4f8;
+  color: #2d2630;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.special-hero {
+  padding: 90px 20px 75px;
+  text-align: center;
+  background: #e6e6fa;
+}
+
+.special-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.special-small-text {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.special-hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  font-family: Georgia, serif;
+}
+
+.special-hero p {
+  max-width: 650px;
+  margin: 18px auto 0;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+
+/* =========================
+   CATEGORY MENU
+========================= */
+
+.occasion-menu-section {
+  padding: 28px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e4dfe5;
+}
+
+.occasion-menu {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.occasion-menu-button {
+  border: 1px solid #d8cfd9;
+  background: #fffdf9;
+  color: #2d2630;
+
+  padding: 12px 20px;
+
+  border-radius: 3px;
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.occasion-menu-button:hover {
+  background: #f4e7b8;
+  transform: translateY(-1px);
+}
+
+.occasion-menu-button.active {
+  background: #e9d28b;
+  border-color: #d8bd68;
+  color: #241f18;
+}
+
+
+/* =========================
+   CARDS SECTION
+========================= */
+
+.special-cards-section {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  padding: 70px 25px 100px;
+}
+
+.special-section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.special-section-heading span {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.special-section-heading h2 {
+  margin: 0;
+
+  font-size: 36px;
+  font-weight: 600;
+
+  font-family: Georgia, serif;
+}
+
+.special-section-heading p {
+  max-width: 650px;
+  margin: 14px auto 0;
+
+  line-height: 1.7;
+  color: #6c626c;
+}
+
+
+/* =========================
+   CARD GRID
+========================= */
+
+.special-card-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.special-card {
+  background: #ffffff;
+
+  border: 1px solid #e5dfe5;
+
+  box-shadow:
+    0 8px 25px rgba(60, 45, 60, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.special-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(60, 45, 60, 0.14);
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
+.special-card-image {
+  position: relative;
+
+  height: 360px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: #faf8f8;
+
+  overflow: hidden;
+}
+
+.special-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.special-card:hover .special-card-image img {
+  transform: scale(1.03);
+}
+
+
+/* =========================
+   HEART
+========================= */
+
+.special-heart {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.special-card-content {
+  padding: 22px;
+  text-align: center;
+}
+
+.special-card-content h3 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.special-card-content p {
+  margin: 10px 0 18px;
+
+  font-size: 13px;
+  color: #777;
+}
+
+.special-view-button {
+  border: none;
+
+  background: transparent;
+
+  color: #302631;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .special-card-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .special-hero h1 {
+    font-size: 40px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .special-hero {
+    padding: 65px 20px 55px;
+  }
+
+  .special-hero h1 {
+    font-size: 34px;
+  }
+
+  .special-hero p {
+    font-size: 14px;
+  }
+
+  .occasion-menu {
+    justify-content: flex-start;
+  }
+
+  .occasion-menu-button {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .special-cards-section {
+    padding: 50px 18px 70px;
+  }
+
+  .special-section-heading h2 {
+    font-size: 29px;
+  }
+
+  .special-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .special-card-image {
+    height: 330px;
+  }
+
+}

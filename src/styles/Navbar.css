@@ -1,0 +1,517 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  background: #e7e5fa;
+  color: #111;
+  position: relative;
+  z-index: 1000;
+}
+
+
+/* =========================================
+   TOP AREA
+========================================= */
+
+.navbar-top {
+  width: 100%;
+  min-height: 315px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 28px 5.5% 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+  width: 430px;
+  height: 250px;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  cursor: pointer;
+}
+
+.navbar-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: left top;
+
+  display: block;
+}
+
+
+/* =========================================
+   SEARCH + ACTIONS
+========================================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  margin-top: 92px;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.navbar-search {
+  width: 430px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1.5px solid #111;
+  border-radius: 12px;
+
+  background: transparent;
+
+  box-sizing: border-box;
+}
+
+.navbar-search input {
+  flex: 1;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0 18px 0 24px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #111;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar-search input::placeholder {
+  color: #111;
+  opacity: 1;
+}
+
+.search-button {
+  width: 62px;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.search-button svg {
+  width: 30px;
+  height: 30px;
+
+  fill: none;
+  stroke: #111;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+
+/* =========================================
+   ACTION ICONS
+========================================= */
+
+.navbar-action {
+  width: 58px;
+  height: 58px;
+
+  position: relative;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.navbar-action svg {
+  width: 34px;
+  height: 34px;
+
+  fill: none;
+  stroke: #111;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* LOGIN */
+
+.login-action {
+  border-radius: 50%;
+  background: #8170ed;
+}
+
+.login-action svg {
+  width: 35px;
+  height: 35px;
+}
+
+
+/* WISHLIST */
+
+.wishlist-action {
+  background: transparent;
+}
+
+.wishlist-action svg {
+  width: 38px;
+  height: 38px;
+}
+
+
+/* CART */
+
+.cart-action {
+  border-radius: 50%;
+  background: #8170ed;
+}
+
+.cart-action svg {
+  width: 37px;
+  height: 37px;
+}
+
+.cart-count {
+  position: absolute;
+
+  top: -3px;
+  right: -2px;
+
+  width: 19px;
+  height: 19px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #111;
+  color: white;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   MAIN NAVIGATION
+========================================= */
+
+.navbar-menu {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2.5% 22px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   NAV ITEM
+========================================= */
+
+.navbar-menu-item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   NAV BUTTON
+========================================= */
+
+.navbar-menu-button {
+  position: relative;
+
+  padding: 8px 12px 10px;
+
+  border: none;
+  background: transparent;
+
+  color: #111;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+
+  line-height: 1.2;
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+.navbar-menu-button:hover {
+  color: #111;
+}
+
+
+/* Prototype dropdown open underline */
+
+.navbar-menu-button.dropdown-open::after,
+.navbar-menu-button:hover::after {
+  content: "";
+
+  position: absolute;
+
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+
+  height: 2px;
+
+  background: #111;
+}
+
+
+/* =========================================
+   DROPDOWN
+========================================= */
+
+.navbar-dropdown {
+  position: absolute;
+
+  top: calc(100% + 0px);
+  left: 0;
+
+  min-width: 315px;
+
+  padding: 8px 0 10px;
+
+  background: #ffe6b5;
+
+  box-sizing: border-box;
+
+  z-index: 2000;
+}
+
+
+/* =========================================
+   DROPDOWN ITEM
+========================================= */
+
+.navbar-dropdown-item {
+  width: 100%;
+
+  display: block;
+
+  padding: 9px 16px;
+
+  border: none;
+  background: transparent;
+
+  color: #111;
+
+  text-align: left;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  cursor: pointer;
+}
+
+.navbar-dropdown-item:hover {
+  background: #f8c64e;
+  color: #111;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1400px) {
+
+  .navbar-top {
+    min-height: 275px;
+  }
+
+  .navbar-logo {
+    width: 350px;
+    height: 220px;
+  }
+
+  .navbar-actions {
+    gap: 18px;
+    margin-top: 80px;
+  }
+
+  .navbar-search {
+    width: 360px;
+    height: 58px;
+  }
+
+  .navbar-menu {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .navbar-menu-button {
+    font-size: 24px;
+  }
+
+  .navbar-dropdown-item {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 1100px) {
+
+  .navbar-top {
+    min-height: auto;
+
+    padding: 20px 4%;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  .navbar-logo {
+    width: 330px;
+    height: 190px;
+  }
+
+  .navbar-actions {
+    width: 100%;
+
+    justify-content: center;
+
+    margin-top: 0;
+  }
+
+  .navbar-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px 16px;
+
+    padding: 10px 3% 20px;
+  }
+
+  .navbar-menu-button {
+    font-size: 20px;
+  }
+
+  .navbar-dropdown {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .navbar-logo {
+    width: 280px;
+    height: 160px;
+  }
+
+  .navbar-actions {
+    gap: 10px;
+  }
+
+  .navbar-search {
+    width: 240px;
+    height: 48px;
+  }
+
+  .navbar-search input {
+    font-size: 16px;
+    padding-left: 14px;
+  }
+
+  .search-button {
+    width: 50px;
+  }
+
+  .navbar-action {
+    width: 46px;
+    height: 46px;
+  }
+
+  .navbar-action svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4px;
+  }
+
+  .navbar-menu-button {
+    font-size: 18px;
+  }
+
+  .navbar-dropdown {
+    position: static;
+
+    transform: none;
+
+    width: 280px;
+    min-width: 280px;
+
+    margin-top: 4px;
+  }
+
+  .navbar-dropdown-item {
+    font-size: 17px;
+  }
+}
